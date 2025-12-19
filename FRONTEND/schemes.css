@@ -1,0 +1,118 @@
+:root {
+  --green: #4e7650;
+  --green-light: #e8f5e9;
+  --bg: #f4f7f6;
+  --card: #ffffff;
+  --text-dark: #263238;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  background: var(--bg);
+}
+
+/* HEADER */
+.top-bar {
+  background: linear-gradient(135deg, #1b5e20, #2e7d32);
+  color: #fff;
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-btn {
+  color: #fff;
+  text-decoration: none;
+  background: rgba(255,255,255,0.15);
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+/* LAYOUT */
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 2.6fr 0.9fr;
+  gap: 24px;
+}
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  background: var(--card);
+  padding: 22px 26px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.card h2 {
+  color: var(--green);
+}
+
+.highlight {
+  border-left: 6px solid var(--green);
+}
+
+.badge {
+  display: inline-block;
+  background: var(--green-light);
+  color: var(--green);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+/* SCHEME INFO */
+.scheme-info div {
+  margin-top: 10px;
+}
+
+/* SELECT */
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+/* DOCUMENT LIST */
+ul {
+  padding-left: 18px;
+}
+
+/* RIGHT PANEL */
+.sticky-box {
+  position: sticky;
+  top: 100px;
+}
+
+.help-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 14px 0;
+}
+
+.help-item i {
+  color: var(--green);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+  }
+  .sticky-box {
+    position: static;
+  }
+}

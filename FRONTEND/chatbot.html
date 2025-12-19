@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Crop Assistant | Krishi Sakhi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Global + Page CSS -->
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="chatbot.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- ================= TOP HEADER (LIKE GOVT SCHEMES) ================= -->
+<header class="top-bar">
+  <h1>
+    <i class="fa-solid fa-robot"></i>
+    AI Crop Assistant
+  </h1>
+  <a href="home.html" class="back-btn">← Back to Dashboard</a>
+</header>
+
+<!-- ================= MAIN LAYOUT ================= -->
+<main class="chatbot-layout">
+
+  <!-- ================= LEFT CHAT PANEL ================= -->
+  <section class="chat-panel">
+
+    <!-- CHAT WINDOW -->
+    <div class="chat-window" id="chatWindow">
+      <div class="bot-msg">
+        👋 Hello Farmer! <br>
+        I’m your <strong>AI Crop Assistant</strong>.  
+        Ask me about <b>crops, diseases, fertilizers, soil health</b>, or <b>weather impact</b>.
+      </div>
+    </div>
+
+    <!-- QUICK QUESTIONS -->
+    <div class="quick-questions">
+      <button onclick="sendQuick('Best fertilizer for wheat?')">🌾 Wheat Fertilizer</button>
+      <button onclick="sendQuick('Rice disease symptoms')">🍚 Rice Disease</button>
+      <button onclick="sendQuick('Pest control in maize')">🌽 Maize Pest</button>
+      <button onclick="sendQuick('How to improve soil health?')">🌱 Soil Health</button>
+    </div>
+
+    <!-- INPUT AREA -->
+    <div class="chat-input">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Type your question and press Enter…"
+        autocomplete="off"
+      >
+      <button onclick="sendMessage()" title="Send">
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </div>
+
+  </section>
+
+  <!-- ================= RIGHT INFO PANEL ================= -->
+  <aside class="info-panel">
+
+    <h3>🧠 What this AI can help with</h3>
+    <ul>
+      <li>Crop disease & pest guidance</li>
+      <li>Fertilizer recommendations</li>
+      <li>Soil health improvement tips</li>
+      <li>Weather-based farming advisories</li>
+      <li>Yield improvement suggestions</li>
+    </ul>
+
+    <h3>🌾 Supported Crops</h3>
+    <div class="crop-tags">
+      <span>Wheat</span>
+      <span>Rice</span>
+      <span>Maize</span>
+      <span>Mustard</span>
+    </div>
+
+    <div class="note">
+      ⚠️ <strong>Disclaimer:</strong><br>
+      AI suggestions are advisory only.  
+      Always consult local agriculture officers for critical decisions.
+    </div>
+
+  </aside>
+
+</main>
+
+<!-- ================= SCRIPT ================= -->
+<script src="chatbot.js"></script>
+
+</body>
+</html>

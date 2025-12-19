@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Krishi Sakhi – Farmer Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+
+</head>
+<body>
+
+<header class="top-nav">
+    <div class="brand">
+        <i class="fa-solid fa-seedling logo-icon"></i>
+        <div>
+            <h1>Krishi Sakhi</h1>
+            <p>Your Complete Farmer Companion</p>
+        </div>
+    </div>
+
+<div class="top-right">
+    <div class="weather-snippet">
+        <i class="fa-solid fa-sun weather-icon"></i>
+        <span id="currentTemp">28°C</span>
+        <span id="currentWeather">Sunny</span>
+    </div>
+
+    <a href="profile.html" class="profile">
+        <div class="profile-text">
+            <span class="farmer-name">Shivansh</span>
+            <span class="farmer-location">Pratapgarh, UP</span>
+        </div>
+        <div class="profile-avatar">S</div>
+    </a>
+</div>
+
+
+</header>
+
+<div class="layout">
+    <nav class="sidebar">
+        <a class="nav-item active" href="home.html"><i class="fa-solid fa-table-columns"></i> Overview</a>
+
+```
+    <div class="nav-group-title">Guidance & Support</div>
+    <a class="nav-item" href="chatbot.html"><i class="fa-solid fa-comment-dots"></i> AI Chatbot</a>
+    <a class="nav-item" href="advisories.html"><i class="fa-solid fa-clipboard-check"></i> Advisories</a>
+
+    <div class="nav-group-title">Financial & Markets</div>
+    <a class="nav-item" href="schemes.html"><i class="fa-solid fa-hand-holding-dollar"></i> Govt. Schemes</a>
+    <a class="nav-item" href="mandi.html"><i class="fa-solid fa-chart-line"></i> Market Prices</a>
+
+    <div class="nav-group-title">Utilities</div>
+    <a class="nav-item" href="weather.html"><i class="fa-solid fa-cloud-sun"></i> Weather</a>
+
+    <button onclick="logoutFarmer()">Logout</button>
+
+</nav>
+
+<main class="content">
+    <section class="section visible">
+        <h2>Good Afternoon, <span>Shivansh</span> 👋</h2>
+        <p class="intro">Here are your personalized quick actions and daily insights.</p>
+
+        <div class="cards-grid">
+            <!-- AI CHATBOT CARD -->
+            <a href="chatbot.html" class="card action-card">
+                <div class="card-icon-area"><i class="fa-solid fa-microscope icon-blue"></i></div>
+                <h3>AI Crop Doctor</h3>
+                <p class="card-desc">Ask about pests, fertilizers, and diseases.</p>
+            </a>
+
+            <!-- SCHEMES CARD -->
+            <a href="schemes.html" class="card info-card">
+                <div class="card-icon-area"><i class="fa-solid fa-bullhorn icon-orange"></i></div>
+                <h3>PM‑KISAN & Schemes</h3>
+                <p class="card-desc">Check support schemes you may be eligible for.</p>
+                <div class="card-status-pill status-ready">5 Schemes Available</div>
+            </a>
+
+            <!-- ADVISORY CARD -->
+            <a href="advisories.html" class="card info-card">
+                <div class="card-icon-area"><i class="fa-solid fa-lightbulb icon-yellow"></i></div>
+                <h3>Today’s Advisory</h3>
+                <p class="card-desc">High humidity expected. Check for fungal growth in Wheat.</p>
+                <div class="card-link">View Full Advisory →</div>
+            </a>
+
+            <!-- MARKET CARD -->
+            <a href="mandi.html" class="card info-card">
+                <div class="card-icon-area"><i class="fa-solid fa-peso-sign icon-green"></i></div>
+                <h3>Nearby Mandi Rates</h3>
+                <p class="card-desc">Wheat (Primary Crop): ₹2350/Quintal</p>
+                <div class="card-link">See All Market Rates →</div>
+            </a>
+
+            <!-- CROP CALENDAR CARD -->
+<a href="./crop-calendar.html" class="card info-card">
+  <div class="card-icon-area">
+    <i class="fa-solid fa-calendar-days icon-green"></i>
+  </div>
+  <h3>Crop Calendar</h3>
+  <p class="card-desc">
+    Stage-wise guidance for Wheat, Rice & Maize.
+  </p>
+  <div class="card-link">View Crop Calendar →</div>
+</a>
+
+        </div>
+    </section>
+</main>
+```
+
+</div>
+
+<script src="home.js"></script>
+
+</body>
+</html>

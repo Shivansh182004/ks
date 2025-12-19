@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Government Schemes | Krishi Sakhi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="schemes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="global.css">
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="top-bar">
+    <h1>🏛️ Government Schemes</h1>
+    <a href="home.html" class="back-btn">← Back to Dashboard</a>
+</header>
+
+<!-- MAIN -->
+<main class="container grid-layout">
+
+    <!-- LEFT PANEL -->
+    <div class="left-panel">
+
+        <!-- FILTER -->
+        <section class="card">
+            <h2>Select Category</h2>
+            <select id="schemeCategory">
+                <option value="">-- Select Category --</option>
+                <option value="income">Income Support</option>
+                <option value="insurance">Crop Insurance</option>
+                <option value="loan">Loan & Credit</option>
+                <option value="irrigation">Irrigation</option>
+            </select>
+        </section>
+
+        <!-- SCHEME DETAILS -->
+        <section class="card highlight">
+            <p class="badge">Scheme Details</p>
+            <h3 id="schemeName">Select a category</h3>
+            <p id="schemeDesc">Scheme details will appear here.</p>
+
+            <div class="scheme-info">
+                <div><strong>Benefit:</strong> <span id="schemeBenefit">—</span></div>
+                <div><strong>Eligibility:</strong> <span id="schemeEligibility">—</span></div>
+                <div><strong>How to Apply:</strong> <span id="schemeApply">—</span></div>
+            </div>
+        </section>
+
+        <!-- REQUIRED DOCUMENTS -->
+        <section class="card">
+            <h2>Required Documents</h2>
+            <ul id="docList">
+                <li>Select a scheme to view documents</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right-panel">
+        <section class="card sticky-box">
+            <h2>Quick Help</h2>
+
+            <div class="help-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>Kisan Call Center</span>
+                <strong>1551</strong>
+            </div>
+
+            <div class="help-item">
+                <i class="fa-solid fa-globe"></i>
+                <span>Official Portal</span>
+                <strong>gov.in</strong>
+            </div>
+
+            <div class="help-item">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Local Office</span>
+                <strong>Agriculture Dept.</strong>
+            </div>
+        </section>
+    </div>
+
+</main>
+
+<script src="schemes.js"></script>
+</body>
+</html>

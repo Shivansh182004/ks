@@ -1,0 +1,54 @@
+/* Layout */
+.grid-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+/* Cards */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.highlight {
+  border-left: 6px solid #2e7d32;
+}
+
+.badge {
+  display: inline-block;
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+/* Select */
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Stage List */
+#stageList {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+#stageList li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Chart */
+canvas {
+  width: 100% !important;
+  height: 280px !important;
+}
